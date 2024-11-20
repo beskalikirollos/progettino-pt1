@@ -29,29 +29,27 @@ def rimuovi_elemento():
             else:
                 print("Indice non valido.")
         except ValueError:
+        
             print("Per favore, inserisci un numero valido.")
 
 #5.Aggiungere un menu tramite un ciclo while che permettere all’utente di decidere a quale metodo accedere o se terminare (tipo la scorsa esercitazione)
 def menu():
-    while True:
-        print("\nMenu:")
-        print("1. Aggiungi un elemento alla lista")
-        print("2. Visualizza la lista")
-        print("3. Rimuovi un elemento dalla lista")
-        print("4. Esci")
-
-        scelta = input("Scegli un'opzione (1/2/3/4): ")
-
-        if scelta == '1':
-            aggiungi_elemento()
-        elif scelta == '2':
-            visualizza_lista()
-        elif scelta == '3':
-            rimuovi_elemento()
-        elif scelta == '4':
-            print("Arrivederci!")
-            break
-        else:
-            print("Opzione non valida. Riprova.")
+  while True:
+print("premi 0 per uscire,\npremi 1 per aggiungerre un elemento,\npremi 2 per
+visualizzare la lista,\n premi 3 per eliminare un elemento,\n premi 4 per contare
+gli elementi della lista,\n premi 5 per eliminare un elemento")
+x=int(input(""))
+if x == 0:
+break
+elif x == 1:
+aggiungi_elemento()
+elif x == 2:
+visualizza_lista()
+elif x == 3:
+rimuovi_elemento()
+elif x == 4:
+conta()
+elif x == 5:
+svuota_()
 
 menu()
