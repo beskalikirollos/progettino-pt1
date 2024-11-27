@@ -32,24 +32,23 @@ def rimuovi_elemento():
         
             print("Per favore, inserisci un numero valido.")
 
-#5.Aggiungere un menu tramite un ciclo while che permettere all’utente di decidere a quale metodo accedere o se terminare (tipo la scorsa esercitazione)
-def menu():
-  while True:
-print("premi 0 per uscire,\npremi 1 per aggiungerre un elemento,\npremi 2 per
-visualizzare la lista,\n premi 3 per eliminare un elemento,\n premi 4 per contare
-gli elementi della lista,\n premi 5 per eliminare un elemento")
-x=int(input(""))
-if x == 0:
-break
-elif x == 1:
-aggiungi_elemento()
-elif x == 2:
-visualizza_lista()
-elif x == 3:
-rimuovi_elemento()
-elif x == 4:
-conta()
-elif x == 5:
-svuota_()
+    def conta_elementi(lista_spesa):
+     y = len(lista_spesa)
+    print(f" la lista è lunga  {y}   elementi")
 
-menu()
+#5.Aggiungere un menu tramite un ciclo while che permettere all’utente di decidere a quale metodo accedere o se terminare (tipo la scorsa esercitazione)
+while True:
+    print("premi 0 per uscire,\npremi 1 per aggiungerre un elemento,\npremi 2 pervisualizzare la lista,\n premi 3 per eliminare un elemento,\n premi 4 per contaregli elementi della lista,\n premi 5 per eliminare un elemento")
+    x=int(input(""))
+    if x == 0:
+        break
+    elif x == 1:
+        aggiungi_elemento()
+    elif x == 2:
+        visualizza_lista()
+    elif x == 3:
+        rimuovi_elemento()
+    elif x == 4:
+        conta_elementi()
+    elif x == 5:
+        svuota_lista()
